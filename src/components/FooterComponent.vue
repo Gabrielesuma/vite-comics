@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="image">
-                    <img src="../assets/img/dc-logo-bg.png" alt="LogoDC">
+                    
                 </div>
             </div>
         </div>
@@ -239,11 +239,9 @@
         }
         div.image{
             width: 50%;
-            img{
-                width: 500px;
-                height: 500px;
-                object-fit: cover;
-            }
+            background-image: url('../assets/img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
     div.third-footer{

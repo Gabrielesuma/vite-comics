@@ -1,11 +1,14 @@
 <template>
-    <header class="container">
-        <img src="../assets/img/dc-logo.png" alt="Logo">
-        <ul>
-            <li v-for="(item, index) in menu" :key="index">
-                <a :href="item.url">{{ item.name }}</a>
-            </li>
-        </ul>
+    <header>
+        <div class="container">
+            <img src="../assets/img/dc-logo.png" alt="Logo">
+            <ul>
+                <li v-for="(item, index) in menu" :key="index">
+                    <a :href="item.url">{{ item.name }}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="jumbo"></div>
     </header>
 </template>
 
@@ -63,7 +66,7 @@
 
 <style lang="scss" scoped>
     @use '../assets/styles/partials/variables' as *;
-    header{
+    .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -71,6 +74,12 @@
         img{
             width: 50px;
         }
+    }
+
+    div.jumbo{
+        background-image: url('../assets/img/jumbotron.jpg');
+        min-height: 300px;
+        background-size: cover;
     }
 
     ul{
