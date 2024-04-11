@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="second-footer">
-            <div class="container">
+            <div class="container d-flex">
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <h5>DC COMICS</h5>
@@ -57,6 +57,9 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="image">
+                    <img src="../assets/img/dc-logo-bg.png" alt="LogoDC">
                 </div>
             </div>
         </div>
@@ -219,16 +222,27 @@
         color: white;
         background-image: url('../assets/img/footer-bg.jpg');
         background-repeat: no-repeat;
-        h5{
-            padding: 10px;
+        div.row{
+            width: 50%;
+            h5{
+                padding: 10px;
+            }
+            ul{
+                list-style: none;
+                padding: 0 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                }
+            }
         }
-        ul{
-            list-style: none;
-            padding: 0 10px;
-            a{
-                text-decoration: none;
-                color: white;
-                font-size: 14px;
+        div.image{
+            width: 50%;
+            img{
+                width: 500px;
+                height: 500px;
+                object-fit: cover;
             }
         }
     }

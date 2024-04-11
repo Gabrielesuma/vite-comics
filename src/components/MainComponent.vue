@@ -7,8 +7,17 @@
 </template>
 
 <script>
+    import {comics} from '../data/store.js';
     export default {
-        name: 'MainComponent'
+        name: 'MainComponent',
+        data(){
+            return {
+                comics: comics
+            }
+        },
+        mounted(){
+            console.log(this.comics);
+        }
     }
 </script>
 
