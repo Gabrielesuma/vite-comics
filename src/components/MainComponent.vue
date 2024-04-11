@@ -1,9 +1,9 @@
 <template>
     <main>
         <div class="container">
-            <span>
+            <div class="current">
                 CURRENT SERIES
-            </span>
+            </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-2 mb-4" v-for="(item, index) in comics" :key="index">
                     <CardComponent :image="item.thumb" :title="item.series"/>
@@ -53,11 +53,13 @@
             margin-bottom: 30px;
         }
     }
-    span{
+    div.current{
         color: white;
         background-color: $firstfooter;
         margin: 0;
         padding: 10px;
         transform: translateY(-50%);
+        width: 150px;
+        text-align: center;
     }
 </style>
